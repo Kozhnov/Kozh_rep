@@ -14,7 +14,8 @@ last_limit = 100
 while True:
     secret_number = (thirst_limit + last_limit) // 2
     count+=1
-    predict_number = int(input("Угадай число от 1 до 100: "))
+    print("Диапазон от", thirst_limit, "до", last_limit)
+    predict_number = int(input("Угадай число: "))
     
     if predict_number > number:
         print("Число должно быть меньше!")
